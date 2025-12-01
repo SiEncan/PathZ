@@ -1,12 +1,12 @@
 export function HomePassionSkills() {
   return (
     <section className="py-20 md:py-28 bg-white">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-6xl mx-auto px-8">
         <div className="text-center mb-16 space-y-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-            Passion vs Skill: Menemukan Keseimbangan
+          <h2 className="text-3xl md:text-5xl font-bold text-foreground">
+            Passion vs Skill: Temukan Keseimbanganmu!
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
             Karier terbaik lahir dari gabungan apa yang kamu suka dan apa yang dibutuhkan dunia. Yuk cari titik
             temu dari keduanya.
           </p>
@@ -19,7 +19,7 @@ export function HomePassionSkills() {
               <span className="text-2xl">❤</span>
               <span className="font-semibold text-pink-700">Passion Kamu</span>
             </div>
-            <p className="text-foreground leading-relaxed text-lg text-gray-700">
+            <p className="text-foreground leading-relaxed text-sm md:text-lg text-gray-700">
               Apa yang menggerakkanmu? Apa yang ingin kamu selesaikan? Passion adalah sesuatu yang membuat 
               kamu tetap jalan meski banyak tantangan, dan membentuk cerita karier kamu sendiri.
             </p>
@@ -43,7 +43,7 @@ export function HomePassionSkills() {
               <span className="text-2xl">⚡</span>
               <span className="font-semibold text-blue-700">Skill yang Dibutuhkan Pasar</span>
             </div>
-            <p className="text-foreground leading-relaxed text-lg text-gray-700">
+            <p className="text-foreground leading-relaxed text-sm md:text-lg text-gray-700">
               Apa yang sedang dicari industri? Skill apa yang makin bernilai? Menguasai skill yang banyak dibutuhkan
               bikin passion kamu bisa berubah jadi peluang nyata.
             </p>

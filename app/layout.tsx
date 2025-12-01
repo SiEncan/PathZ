@@ -12,7 +12,6 @@ export const metadata: Metadata = {
   title: "PathZ - Gen Z Career Navigator",
   description:
     "Navigate your career path with confidence. Explore careers, take assessments, learn roadmaps, and find mentorship.",
-  generator: "v0.app",
   icons: {
     icon: [
       {
@@ -24,11 +23,11 @@ export const metadata: Metadata = {
         media: "(prefers-color-scheme: dark)",
       },
       {
-        url: "/icon.svg",
+        url: "/path-z.svg",
         type: "image/svg+xml",
       },
     ],
-    apple: "/apple-icon.png",
+    apple: "/path-z.jpg",
   },
 }
 

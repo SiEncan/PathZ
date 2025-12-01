@@ -1,7 +1,7 @@
 export function Footer() {
   return (
-    <footer className="border-t border-purple-200/50 bg-gradient-to-b from-white to-purple-50/30 mt-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+    <footer className="border-t border-blue-200/50 bg-gradient-to-b from-white to-blue-50/30 mt-16">
+      <div className="max-w-7xl mx-auto px-8 sm:px-6 lg:px-8 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12 mb-8">
           {/* Brand Column */}
           <div className="space-y-4">

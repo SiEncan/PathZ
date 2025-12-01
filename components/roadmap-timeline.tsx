@@ -69,14 +69,14 @@ export function RoadmapTimeline() {
 
   return (
     <section className="w-full py-14 md:py-20 bg-gradient-to-br from-blue-50/40 via-white to-blue-50/40">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
+      <div className="max-w-7xl mx-auto px-8 space-y-20">
 
         {roadmaps.map((roadmap, roadmapIdx) => (
-          <div key={roadmapIdx} className="space-y-12">
+          <div key={roadmapIdx} className="space-y-6 md:space-y-12">
 
             {/* Title */}
             <div className="space-y-3">
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground">{roadmap.title}</h2>
+              <h2 className="text-2xl md:text-4xl font-bold text-foreground">{roadmap.title}</h2>
               <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-blue-400 rounded-full"></div>
             </div>
 
@@ -119,8 +119,8 @@ export function RoadmapTimeline() {
                         w-full md:w-[48%]
                         ${isLeft ? "md:ml-0 md:mr-auto" : "md:mr-0 md:ml-auto"}`}
                       >
-                        <h3 className="font-bold text-xl text-foreground mb-2">{step.title}</h3>
-                        <p className="text-muted-foreground leading-relaxed">{step.description}</p>
+                        <h3 className="font-bold text-lg md:text-xl text-foreground mb-2">{step.title}</h3>
+                        <p className="text-sm md:text-base text-muted-foreground leading-relaxed">{step.description}</p>
                       </div>
 
                     </div>

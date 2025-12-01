@@ -12,7 +12,7 @@ export function CVTemplateCard({
   icon: string
 }) {
   return (
-    <div className="w-full h-full group bg-white border border-blue-200 rounded-2xl p-6 md:p-8 hover:shadow-glow transition-all duration-300 transform hover:-translate-y-2 cursor-pointer">
+    <div className="w-full h-full group border border-blue-200 rounded-2xl p-6 md:p-8 hover:shadow-glow transition-all duration-300 transform hover:-translate-y-2 cursor-pointer">
       <div className="text-4xl sm:text-5xl mb-4 transition-transform duration-300 leading-none">
         {icon}
       </div>

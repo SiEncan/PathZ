@@ -39,12 +39,37 @@ export default function Assessment() {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-1">
+        <div className="fixed inset-0 overflow-hidden pointer-events-none">
+          {/* Blob kanan atas */}
+          <div
+            className="
+              absolute top-20 right-20 
+              w-96 h-96                       /* mobile */
+              md:w-[500px] md:h-[500px]       /* tablet */
+              lg:w-[750px] lg:h-[750px]       /* desktop */
+              xl:w-[900px] xl:h-[900px]       /* large desktop */
+              bg-blue-200/30 rounded-full blur-3xl
+            "
+          ></div>
+
+          {/* Blob kiri bawah */}
+          <div
+            className="
+              absolute bottom-10 left-20 
+              w-96 h-96
+              md:w-[450px] md:h-[450px]
+              lg:w-[800px] lg:h-[800px]
+              xl:w-[1000px] xl:h-[1000px]
+              bg-cyan-200/20 rounded-full blur-3xl
+            "
+          ></div>
+        </div>
 
         <section className="py-16 bg-gray-50">
-          <div className="max-w-6xl mx-auto px-4">
+          <div className="max-w-6xl mx-auto px-8">
             <div className="space-y-4 mb-16">
-              <h1 className="text-4xl font-bold text-foreground">Career Assessment Tests</h1>
-              <p className="text-lg text-muted-foreground max-w-2xl">
+              <h1 className="text-3xl md:text-4xl font-bold text-foreground">Career Assessment Tests</h1>
+              <p className="md:text-lg text-muted-foreground max-w-2xl">
                 Take our comprehensive tests to discover your career path, assess your skills, and understand your work
                 personality. Each test takes just 10-20 minutes.
               </p>

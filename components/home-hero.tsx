@@ -9,16 +9,16 @@ export function HomeHero() {
         ></div>
       </div>
 
-      <div className="relative max-w-6xl mx-auto px-4 py-20 sm:py-32 flex flex-col items-center justify-center min-h-screen">
+      <div className="relative max-w-6xl mx-auto px-8 py-20 sm:py-32 flex flex-col items-center justify-center min-h-screen">
         <div className="text-center space-y-8 max-w-3xl">
-          <h1 className="text-5xl sm:text-7xl font-bold text-foreground tracking-tight">
+          <h1 className="text-4xl sm:text-7xl font-bold text-foreground tracking-tight">
             Your Career Path{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-500 via-blue-500 to-blue-700">
               Starts Here
             </span>
           </h1>
 
-          <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+          <p className="text-base text-gray-600 sm:text-xl leading-relaxed max-w-2xl mx-auto">
             Discover your passion, develop in-demand skills, and navigate your career with confidence. PathZ is designed
             for Gen Z professionals ready to take control of their future.
           </p>

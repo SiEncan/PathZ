@@ -34,16 +34,16 @@ export function TestCard({
 
       {/* Header */}
       <div className="relative bg-gradient-to-br from-sky-50 to-blue-50 p-6 sm:p-8 flex items-center gap-4 border-b border-blue-100">
-        <span className="text-5xl sm:text-6xl">{icon}</span>
+        <span className="text-4xl sm:text-6xl">{icon}</span>
         <div>
-          <h3 className="text-xl sm:text-2xl font-bold text-foreground">{title}</h3>
-          <p className="text-sm text-muted-foreground line-clamp-1">{description}</p>
+          <h3 className="text-lg sm:text-2xl font-bold text-foreground">{title}</h3>
+          <p className="text-xs md:text-sm text-muted-foreground line-clamp-1">{description}</p>
         </div>
       </div>
 
       {/* Body */}
-      <div className="relative p-6 sm:p-8 space-y-6">
-        <p className="text-muted-foreground leading-relaxed">{description}</p>
+      <div className="relative p-6 sm:p-8 space-y-4 md:space-y-6">
+        <p className="text-sm md:text-base text-muted-foreground leading-relaxed">{description}</p>
 
         <div className="flex flex-col sm:flex-row gap-6 py-6 border-t border-b border-blue-100">
           <div className="flex items-center gap-3">
@@ -71,7 +71,7 @@ export function TestCard({
         <button
           onClick={onStart}
           className="
-            w-full py-4 px-6 
+            w-full py-3 md:py-4 px-6 
             bg-gradient-to-r from-sky-400 via-blue-500 to-blue-600 
             text-white rounded-xl font-semibold 
             hover:shadow-[0_0_20px_rgba(56,189,248,0.6)] 

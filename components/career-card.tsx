@@ -37,7 +37,7 @@ export function CareerCard({ id, title, description, icon }: CareerCardProps) {
 
         {/* Content */}
         <div className="relative flex items-start gap-4">
-          <div className="text-5xl group-hover:scale-125 transition-transform duration-300">
+          <div className="text-4xl md:text-5xl group-hover:scale-125 transition-transform duration-300">
             {icon}
           </div>
 

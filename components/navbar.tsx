@@ -4,6 +4,7 @@ import Link from "next/link"
 import { Menu, X } from "lucide-react"
 import { useState } from "react"
 import { usePathname } from "next/navigation";
+import Image from "next/image"
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -23,13 +24,16 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 md:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 font-bold text-xl md:text-2xl">
-            <div className="w-10 h-10 bg-gradient-to-br from-sky-400 via-blue-500 to-blue-600 rounded-xl flex items-center justify-center text-white font-bold text-lg shadow-lg">
-              P
+          <Link href="/" className="flex items-center">
+            <div className="relative w-32 h-10 md:w-40 md:h-12">
+              <Image
+                src="/path-z.png"
+                alt="PathZ Logo"
+                fill
+                className="object-contain"
+                priority
+              />
             </div>
-            <span className="hidden sm:inline bg-gradient-to-r from-sky-400 via-blue-500 to-blue-600 bg-clip-text text-transparent font-bold">
-              PathZ
-            </span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -57,7 +61,7 @@ export function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 hover:bg-purple-100 rounded-lg transition-colors"
+            className="md:hidden p-2 hover:bg-blue-100 rounded-lg transition-colors"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -70,7 +74,7 @@ export function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="block px-4 py-3 text-sm font-semibold text-muted-foreground hover:text-purple-600 hover:bg-purple-50 rounded-lg transition-all duration-300"
+                className="block px-4 py-3 text-sm font-semibold text-muted-foreground hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all duration-300"
                 onClick={() => setIsOpen(false)}
               >
                 {link.label}

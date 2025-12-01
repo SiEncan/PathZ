@@ -11,7 +11,7 @@ export default function AnalysisCard() {
       <div className="mb-8">
         <div className="flex justify-between items-center mb-2">
           <span className="text-blue-900/80">Overall Score</span>
-          <span className="text-3xl font-extrabold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
+          <span className="text-xl md:text-3xl font-extrabold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
             85/100
           </span>
         </div>
@@ -34,7 +34,7 @@ export default function AnalysisCard() {
                       hover:-translate-y-1 hover:border-emerald-300"
           >
             <CheckCircle className="w-5 h-5 text-emerald-600 mt-0.5" />
-            <p className="text-emerald-700">{text}</p>
+            <p className="text-sm md:text-base text-emerald-700">{text}</p>
           </div>
         ))}
       </div>
@@ -52,7 +52,7 @@ export default function AnalysisCard() {
                       hover:-translate-y-1 hover:border-amber-300"
           >
             <AlertCircle className="w-5 h-5 text-amber-600 mt-0.5" />
-            <p className="text-amber-900">{text}</p>
+            <p className="text-sm md:text-base text-amber-900">{text}</p>
           </div>
         ))}
       </div>

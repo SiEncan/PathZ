@@ -12,44 +12,39 @@ export default function CVTools() {
     { id: 3, name: "Creative CV", description: "Stand out with a unique visual design", icon: "🎨" },
   ]
 
-  const jobs = [
-    {
-      id: 1,
-      title: "Junior Product Manager",
-      company: "TechStart Inc.",
-      location: "Remote",
-      level: "Entry",
-      salary: "$60k - $75k",
-      tags: ["Product", "Analytics", "Communication"],
-    },
-    {
-      id: 2,
-      title: "UX/UI Designer",
-      company: "Creative Studios",
-      location: "New York, NY",
-      level: "Mid",
-      salary: "$80k - $100k",
-      tags: ["Design", "Figma", "User Research"],
-    },
-    {
-      id: 3,
-      title: "Frontend Developer",
-      company: "Web Solutions",
-      location: "San Francisco, CA",
-      level: "Mid",
-      salary: "$90k - $120k",
-      tags: ["React", "TypeScript", "CSS"],
-    },
-  ]
-
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      <main className="flex-1">
+      <main className="flex-1 px-8">
+        <div className="fixed inset-0 overflow-hidden pointer-events-none">
+          {/* Blob kanan atas */}
+          <div
+            className="
+              absolute top-20 right-20 
+              w-96 h-96                       /* mobile */
+              md:w-[500px] md:h-[500px]       /* tablet */
+              lg:w-[750px] lg:h-[750px]       /* desktop */
+              xl:w-[900px] xl:h-[900px]       /* large desktop */
+              bg-blue-200/30 rounded-full blur-3xl
+            "
+          ></div>
+
+          {/* Blob kiri bawah */}
+          <div
+            className="
+              absolute bottom-10 left-20 
+              w-96 h-96
+              md:w-[450px] md:h-[450px]
+              lg:w-[800px] lg:h-[800px]
+              xl:w-[1000px] xl:h-[1000px]
+              bg-cyan-200/20 rounded-full blur-3xl
+            "
+          ></div>
+        </div>
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-primary/10 to-primary/5 py-16 px-4">
+        <section className="bg-gradient-to-br from-primary/10 to-primary/5 py-16">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">CV & Job Tools</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">CV & Job Tools</h1>
             <p className="text-lg text-muted-foreground">
               Create stunning CVs, practice interviews, and discover job opportunities.
             </p>
@@ -57,7 +52,7 @@ export default function CVTools() {
         </section>
 
         {/* CV Templates Section */}
-        <section className="py-8 px-4">
+        <section className="py-8">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-foreground mb-12 text-center">CV Templates</h2>
             <div className="grid md:grid-cols-3 gap-8 mb-16">
@@ -74,12 +69,7 @@ export default function CVTools() {
         </section>
 
         {/* CV Analyzer & Mock Interview Section */}
-        <main className="flex items-center justify-center p-4 md:p-8">
-          <div className="fixed inset-0 overflow-hidden pointer-events-none">
-            <div className="absolute top-20 right-20 w-96 h-96 bg-blue-200/30 rounded-full blur-3xl"></div>
-            <div className="absolute bottom-20 left-20 w-96 h-96 bg-cyan-200/20 rounded-full blur-3xl"></div>
-          </div>
-
+        <main className="flex items-center justify-center">
           <div className="relative z-10 w-full max-w-6xl grid md:grid-cols-2 gap-6">
             <FileUploadCard />
             <AnalysisCard />
