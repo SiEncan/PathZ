@@ -1,0 +1,39 @@
+export function HomeHero() {
+  return (
+    <section className="relative min-h-screen bg-gradient-to-br from-sky-200 via-blue-50 to-blue-200 overflow-hidden">
+      <div className="absolute inset-0 opacity-30">
+        <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-br from-sky-200 to-blue-300 rounded-full blur-3xl animate-pulse"></div>
+        <div
+          className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-br from-blue-300 to-sky-400 rounded-full blur-3xl animate-pulse"
+          style={{ animationDelay: "1s" }}
+        ></div>
+      </div>
+
+      <div className="relative max-w-6xl mx-auto px-4 py-20 sm:py-32 flex flex-col items-center justify-center min-h-screen">
+        <div className="text-center space-y-8 max-w-3xl">
+          <h1 className="text-5xl sm:text-7xl font-bold text-foreground tracking-tight">
+            Your Career Path{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-500 via-blue-500 to-blue-700">
+              Starts Here
+            </span>
+          </h1>
+
+          <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+            Discover your passion, develop in-demand skills, and navigate your career with confidence. PathZ is designed
+            for Gen Z professionals ready to take control of their future.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
+            <a href="/assessment" className="group px-8 py-4 bg-gradient-to-r from-sky-500 via-blue-500 to-blue-600 text-white rounded-2xl font-semibold hover:shadow-[0_0_20px_rgba(56,189,248,0.6)] transition-all duration-300 transform hover:scale-105 shadow-soft">
+              Take Career Interest Test
+            </a>
+
+            <a href="/career-explorer" className="group px-8 py-4 bg-white/80 backdrop-blur-sm border-2 border-blue-200 text-blue-700 rounded-2xl font-semibold hover:bg-white/90 hover:border-blue-400 transition-all duration-300 shadow-soft">
+              Career Explorer
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
