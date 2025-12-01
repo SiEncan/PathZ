@@ -1,20 +1,22 @@
+import Link from "next/link"
+import Image from "next/image"
 export function Footer() {
   return (
     <footer className="border-t border-blue-200/50 bg-gradient-to-b from-white to-blue-50/30 mt-16">
       <div className="max-w-7xl mx-auto px-8 sm:px-6 lg:px-8 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12 mb-8">
           {/* Brand Column */}
-          <div className="space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-gradient-to-br from-sky-400 via-blue-500 to-blue-600 rounded-xl flex items-center justify-center text-white font-bold text-lg shadow-lg">
-                P
-              </div>
-              <span className="font-bold text-lg bg-gradient-to-r from-sky-400 via-blue-500 to-blue-600 bg-clip-text text-transparent">
-                PathZ
-              </span>
+          <Link href="/" className="flex">
+            <div className="relative w-32 h-10 md:w-40 md:h-12">
+              <Image
+                src="/path-z.png"
+                alt="PathZ Logo"
+                fill
+                className="object-contain"
+                priority
+              />
             </div>
-            <p className="text-sm text-muted-foreground">Gen Z Career Navigator</p>
-          </div>
+          </Link>
 
           {/* Product Links */}
           <div className="space-y-3">

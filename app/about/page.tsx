@@ -6,34 +6,29 @@ import { Footer } from "@/components/footer"
 
 const teamMembers = [
   {
-    name: "Sarah Chen",
-    role: "Founder & CEO",
-    bio: "Career strategist with 8+ years in talent development. Passionate about demystifying career paths for Gen Z.",
-    image: "/professional-woman-ceo.jpg",
+    name: "Adnan Alvito Mustaqim",
+    nim: "535230216",
+    image: "/adnan.jpg",
   },
   {
     name: "Junardi Chailesia",
-    role: "Head of Product",
-    bio: "Product designer & strategist. Focused on creating intuitive experiences that guide Gen Z to their dream careers.",
+    nim: "535230225",
     image: "/junardi.jpg",
   },
   {
-    name: "Aisha Patel",
-    role: "Lead Engineer",
-    bio: "Full-stack developer with passion for AI & personalization. Building the tech that powers PathZ's intelligence.",
+    name: "Annisa Fadhilah Ramadhani",
+    nim: "915230238",
     image: "/professional-woman-engineer.jpg",
   },
   {
-    name: "David Rodriguez",
-    role: "Career Insights Director",
-    bio: "Former HR executive with deep connections in 50+ industries. Curates PathZ's mentor network and career data.",
-    image: "/professional-man-director.jpg",
+    name: "Salsabila Khalfian",
+    nim: "915230240",
+    image: "/aca.jpg",
   },
   {
-    name: "Emma Thompson",
-    role: "Community Manager",
-    bio: "Gen Z advocate & community builder. Ensures every user feels supported on their career journey.",
-    image: "/professional-woman-community.jpg",
+    name: "Wiyandi Maulana Pratama",
+    nim: "535230173",
+    image: "/maul.jpg",
   },
 ]
 
@@ -114,7 +109,7 @@ export default function About() {
             Temui Tim Kami
           </h2>
           <p className="text-xl text-slate-600">
-            Para ahli berpengalaman yang berdedikasi untuk merevolusi eksplorasi karier bagi Gen Z
+            Orang-orang kreatif yang siap nge-boost eksplorasi karier Gen Z kamu!
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
@@ -127,8 +122,7 @@ export default function About() {
               </div>
               <div className="bg-white/40 backdrop-blur-xl rounded-2xl p-5 shadow-lg border border-white/30 transition-all group-hover:shadow-xl">
                 <h3 className="text-lg font-bold mb-1 text-slate-900">{member.name}</h3>
-                <p className="text-sm text-blue-600 font-semibold mb-3">{member.role}</p>
-                <p className="text-sm text-slate-700 leading-relaxed">{member.bio}</p>
+                <span className="text-sm text-blue-600 font-semibold">{member.nim}</span>
               </div>
             </div>
           ))}
@@ -143,8 +137,7 @@ export default function About() {
               </div>
               <div className="bg-white/40 backdrop-blur-xl rounded-2xl p-5 shadow-lg border border-white/30 transition-all group-hover:shadow-xl">
                 <h3 className="text-lg font-bold mb-1 text-slate-900">{member.name}</h3>
-                <p className="text-sm text-blue-600 font-semibold mb-3">{member.role}</p>
-                <p className="text-sm text-slate-700 leading-relaxed">{member.bio}</p>
+                <span className="text-sm text-blue-600 font-semibold">{member.nim}</span>
               </div>
             </div>
           ))}
