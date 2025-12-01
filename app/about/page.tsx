@@ -18,7 +18,7 @@ const teamMembers = [
   {
     name: "Annisa Fadhilah Ramadhani",
     nim: "915230238",
-    image: "/professional-woman-engineer.jpg",
+    image: "/fani.jpg",
   },
   {
     name: "Salsabila Khalfian",
@@ -105,37 +105,28 @@ export default function About() {
       {/* Team Section */}
       <section className="max-w-7xl mx-auto px-6 py-12">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4 text-slate-900">
-            Temui Tim Kami
-          </h2>
+          <h2 className="text-4xl font-bold mb-4 text-slate-900">Temui Tim Kami</h2>
           <p className="text-xl text-slate-600">
             Orang-orang kreatif yang siap nge-boost eksplorasi karier Gen Z kamu!
           </p>
         </div>
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
-          {/* First 3 team members */}
-          {teamMembers.slice(0, 3).map((member, index) => (
-            <div key={index} className="group w-full max-w-sm">
-              <div className="relative mb-6 h-64 rounded-3xl overflow-hidden bg-white/40 border border-white/30 shadow-lg backdrop-blur-xl transition-all group-hover:shadow-2xl group-hover:scale-105">
-                <Image src={member.image || "/placeholder.svg"} alt={member.name} fill className="object-cover" />
+          {teamMembers.map((member, index) => (
+            <div key={index} className="group w-full lg:min-w-sm flex flex-col h-full">
+              {/* Card Image */}
+              <div className="relative mb-6 w-full aspect-[7/5] rounded-3xl overflow-hidden bg-white/40 border border-white/30 shadow-lg backdrop-blur-xl transition-all group-hover:shadow-2xl group-hover:scale-105">
+                <Image
+                  src={member.image || "/placeholder.svg"}
+                  alt={member.name}
+                  fill
+                  className="object-cover"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               </div>
-              <div className="bg-white/40 backdrop-blur-xl rounded-2xl p-5 shadow-lg border border-white/30 transition-all group-hover:shadow-xl">
-                <h3 className="text-lg font-bold mb-1 text-slate-900">{member.name}</h3>
-                <span className="text-sm text-blue-600 font-semibold">{member.nim}</span>
-              </div>
-            </div>
-          ))}
-        </div>
-        {/* Second row with 2 team members */}
-        <div className="grid grid-cols-1 md:grid-cols-2 justify-items-center mt-8">
-          {teamMembers.slice(3, 5).map((member, index) => (
-            <div key={index} className="group w-full max-w-sm">
-              <div className="relative mb-6 h-64 rounded-3xl overflow-hidden bg-white/40 border border-white/30 shadow-lg backdrop-blur-xl transition-all group-hover:shadow-2xl group-hover:scale-105">
-                <Image src={member.image || "/placeholder.svg"} alt={member.name} fill className="object-cover" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-              </div>
-              <div className="bg-white/40 backdrop-blur-xl rounded-2xl p-5 shadow-lg border border-white/30 transition-all group-hover:shadow-xl">
+
+              {/* Card Info */}
+              <div className="bg-white/40 backdrop-blur-xl rounded-2xl p-5 shadow-lg border border-white/30 transition-all group-hover:shadow-xl flex-grow flex flex-col justify-end">
                 <h3 className="text-lg font-bold mb-1 text-slate-900">{member.name}</h3>
                 <span className="text-sm text-blue-600 font-semibold">{member.nim}</span>
               </div>
