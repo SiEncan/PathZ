@@ -20,7 +20,7 @@ export default function FileUploadCard() {
 
   return (
     <div className="w-full bg-white border border-blue-200 rounded-2xl p-8 shadow-sm hover:shadow-glow transition-all duration-300 transform hover:-translate-y-2">
-      <h2 className="text-xl font-bold text-blue-900 mb-6">Upload Your CV</h2>
+      <h2 className="text-xl font-bold text-blue-900 mb-6">Upload CV Kamu!</h2>
 
       <div
         onDragEnter={handleDrag}
@@ -35,7 +35,7 @@ export default function FileUploadCard() {
       >
         <Upload className="w-12 h-12 text-blue-500 mx-auto mb-4" />
 
-        <p className="text-blue-900 font-medium">Drag & drop your CV here</p>
+        <p className="text-blue-900 font-medium">Drag & drop CV kamu disini</p>
         <p className="text-blue-700 text-sm mb-6">or click to browse</p>
 
         <button className="bg-gradient-to-r from-blue-500 to-blue-400 hover:from-blue-600 hover:to-blue-500 text-white font-semibold py-2.5 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-md">

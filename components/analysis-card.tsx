@@ -5,12 +5,12 @@ import { CheckCircle, AlertCircle } from "lucide-react"
 export default function AnalysisCard() {
   return (
     <div className="w-full bg-white border border-blue-200 rounded-2xl p-8 shadow-sm hover:shadow-glow transition-all duration-300 transform hover:-translate-y-2">
-      <h2 className="text-xl font-bold text-blue-900 mb-8">CV Analysis</h2>
+      <h2 className="text-xl font-bold text-blue-900 mb-8">Analisis CV</h2>
 
       {/* Score */}
       <div className="mb-8">
         <div className="flex justify-between items-center mb-2">
-          <span className="text-blue-900/80">Overall Score</span>
+          <span className="text-blue-900/80">Skor Keseluruhan</span>
           <span className="text-xl md:text-3xl font-extrabold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
             85/100
           </span>
@@ -24,8 +24,8 @@ export default function AnalysisCard() {
       {/* Positive */}
       <div className="space-y-3 mb-8">
         {[
-          "Strong action verbs used throughout",
-          "Good use of quantifiable achievements",
+          "Menggunakan kata kerja aksi yang kuat dan efektif",
+          "Menampilkan pencapaian dengan metrik yang jelas dan terukur",
         ].map((text, i) => (
           <div
             key={i}
@@ -42,8 +42,8 @@ export default function AnalysisCard() {
       {/* Suggestions */}
       <div className="space-y-3 mb-8">
         {[
-          "Consider adding more technical skills",
-          "Summary section could be more concise",
+          "Tambahkan beberapa skill teknis untuk menunjukkan kemampuan lebih",
+          "Buat bagian summary lebih ringkas agar langsung ke inti",
         ].map((text, i) => (
           <div
             key={i}
@@ -59,7 +59,7 @@ export default function AnalysisCard() {
 
 
       <button className="w-full bg-gradient-to-r from-blue-500 to-blue-400 hover:from-blue-600 hover:to-blue-500 text-white font-semibold py-3 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-md">
-        Get Detailed Report
+        Lihat Laporan Lengkap
       </button>
     </div>
   )

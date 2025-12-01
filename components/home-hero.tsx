@@ -12,24 +12,29 @@ export function HomeHero() {
       <div className="relative max-w-6xl mx-auto px-8 py-20 sm:py-32 flex flex-col items-center justify-center min-h-screen">
         <div className="text-center space-y-8 max-w-3xl">
           <h1 className="text-4xl sm:text-7xl font-bold text-foreground tracking-tight">
-            Your Career Path{" "}
+            Jalan Karier Kamu{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-500 via-blue-500 to-blue-700">
-              Starts Here
+              Dimulai dari Sini
             </span>
           </h1>
 
           <p className="text-base text-gray-600 sm:text-xl leading-relaxed max-w-2xl mx-auto">
-            Discover your passion, develop in-demand skills, and navigate your career with confidence. PathZ is designed
-            for Gen Z professionals ready to take control of their future.
+            Temukan passionmu, kembangkan keterampilan yang paling dibutuhkan, dan jelajahi perjalanan kariermu dengan percaya diri. PathZ hadir untuk membantu Gen Z membangun masa depan profesional mereka.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
-            <a href="/assessment" className="group px-8 py-4 bg-gradient-to-r from-sky-500 via-blue-500 to-blue-600 text-white rounded-2xl font-semibold hover:shadow-[0_0_20px_rgba(56,189,248,0.6)] transition-all duration-300 transform hover:scale-105 shadow-soft">
-              Take Career Interest Test
+            <a
+              href="/assessment"
+              className="group px-8 py-4 bg-gradient-to-r from-sky-500 via-blue-500 to-blue-600 text-white rounded-2xl font-semibold hover:shadow-[0_0_20px_rgba(56,189,248,0.6)] transition-all duration-300 transform hover:scale-105 shadow-soft"
+            >
+              Mulai Tes Minat Karier
             </a>
 
-            <a href="/career-explorer" className="group px-8 py-4 bg-white/80 backdrop-blur-sm border-2 border-blue-200 text-blue-700 rounded-2xl font-semibold hover:bg-white/90 hover:border-blue-400 transition-all duration-300 shadow-soft">
-              Career Explorer
+            <a
+              href="/career-explorer"
+              className="group px-8 py-4 bg-white/80 backdrop-blur-sm border-2 border-blue-200 text-blue-700 rounded-2xl font-semibold hover:bg-white/90 hover:border-blue-400 transition-all duration-300 shadow-soft"
+            >
+              Jelajahi Karier
             </a>
           </div>
         </div>

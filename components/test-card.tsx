@@ -36,8 +36,7 @@ export function TestCard({
       <div className="relative bg-gradient-to-br from-sky-50 to-blue-50 p-6 sm:p-8 flex items-center gap-4 border-b border-blue-100">
         <span className="text-4xl sm:text-6xl">{icon}</span>
         <div>
-          <h3 className="text-lg sm:text-2xl font-bold text-foreground">{title}</h3>
-          <p className="text-xs md:text-sm text-muted-foreground line-clamp-1">{description}</p>
+          <h3 className="text-xl sm:text-2xl font-bold text-foreground">{title}</h3>
         </div>
       </div>
 
@@ -45,13 +44,13 @@ export function TestCard({
       <div className="relative p-6 sm:p-8 space-y-4 md:space-y-6">
         <p className="text-sm md:text-base text-muted-foreground leading-relaxed">{description}</p>
 
-        <div className="flex flex-col sm:flex-row gap-6 py-6 border-t border-b border-blue-100">
+        <div className="flex flex-col sm:flex-row gap-4 py-6 border-t border-b border-blue-100">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center">
               <Clock size={20} className="text-blue-600" />
             </div>
             <div>
-              <p className="text-xs text-muted-foreground uppercase tracking-wide font-semibold">Duration</p>
+              <p className="text-xs text-muted-foreground uppercase tracking-wide font-semibold">Durasi</p>
               <p className="font-semibold text-foreground">{duration}</p>
             </div>
           </div>
@@ -61,7 +60,7 @@ export function TestCard({
               <HelpCircle size={20} className="text-sky-600" />
             </div>
             <div>
-              <p className="text-xs text-muted-foreground uppercase tracking-wide font-semibold">Questions</p>
+              <p className="text-xs text-muted-foreground uppercase tracking-wide font-semibold">Pertanyaan</p>
               <p className="font-semibold text-foreground">{questions}</p>
             </div>
           </div>
@@ -79,7 +78,7 @@ export function TestCard({
             flex items-center justify-center gap-2 group/btn
           "
         >
-          Start Test
+          Mulai Tes
           <ArrowRight size={18} className="group-hover/btn:translate-x-1 transition-transform" />
         </button>
       </div>

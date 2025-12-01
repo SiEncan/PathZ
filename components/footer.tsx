@@ -43,7 +43,7 @@ export function Footer() {
             <h3 className="font-semibold text-foreground">Resources</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
-                <a href="#" className="hover:text-blue-600 transition-colors duration-300 font-medium">
+                <a href="/cv-tools" className="hover:text-blue-600 transition-colors duration-300 font-medium">
                   CV & Tools
                 </a>
               </li>
@@ -55,7 +55,7 @@ export function Footer() {
             <h3 className="font-semibold text-foreground">Company</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
-                <a href="#" className="hover:text-blue-600 transition-colors duration-300 font-medium">
+                <a href="/about" className="hover:text-blue-600 transition-colors duration-300 font-medium">
                   About
                 </a>
               </li>

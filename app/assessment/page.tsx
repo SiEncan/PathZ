@@ -13,27 +13,28 @@ export default function Assessment() {
       icon: "🎯",
       title: "Career Interest Test",
       description:
-        "Discover which careers align with your interests and passions. This test explores your preferences across different industries and roles.",
-      duration: "15-20 min",
+        "Cari tahu karier yang paling cocok dengan minat dan passion kamu. Tes ini membantumu melihat preferensi di berbagai industri dan jenis peran.",
+      duration: "15-20 menit",
       questions: 40,
     },
     {
       icon: "💻",
       title: "Digital Readiness Test",
       description:
-        "Evaluate your digital skills and tech proficiency. Find out where you stand with in-demand technical competencies for modern careers.",
-      duration: "10-15 min",
+        "Uji kemampuan digital dan pemahaman teknologimu. Ketahui level skill kamu dibandingkan kompetensi digital yang dibutuhkan dunia kerja saat ini.",
+      duration: "10-15 menit",
       questions: 30,
     },
     {
       icon: "🧠",
       title: "Work Personality Test",
       description:
-        "Understand your working style, communication preferences, and team dynamics. Learn how you naturally contribute in professional environments.",
-      duration: "12-18 min",
+        "Pahami gaya kerja, cara komunikasi, dan pola kolaborasi kamu. Pelajari bagaimana kamu biasanya berkontribusi dalam lingkungan profesional.",
+      duration: "12-18 menit",
       questions: 35,
     },
   ]
+
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -66,12 +67,13 @@ export default function Assessment() {
         </div>
 
         <section className="py-16 bg-gray-50">
-          <div className="max-w-6xl mx-auto px-8">
+          <div className="max-w-6xl mx-auto px-8 md:px-4">
             <div className="space-y-4 mb-16">
-              <h1 className="text-3xl md:text-4xl font-bold text-foreground">Career Assessment Tests</h1>
+              <h1 className="text-3xl md:text-4xl font-bold text-foreground">
+                Tes Penilaian Karier
+              </h1>
               <p className="md:text-lg text-muted-foreground max-w-2xl">
-                Take our comprehensive tests to discover your career path, assess your skills, and understand your work
-                personality. Each test takes just 10-20 minutes.
+                Ikuti rangkaian tes untuk menemukan jalur kariermu, menilai skill yang kamu punya, dan memahami gaya kerjamu. Semua tes hanya butuh sekitar 10–20 menit.
               </p>
             </div>
 

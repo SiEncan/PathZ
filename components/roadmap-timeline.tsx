@@ -3,69 +3,71 @@ import { CheckCircle2 } from "lucide-react"
 export function RoadmapTimeline() {
   const roadmaps = [
     {
-      title: "Digital Essential Skills",
+      title: "Skill Digital Dasar",
       steps: [
         {
-          title: "Master Office Productivity",
-          description: "Excel, Google Workspace, presentation tools - essential for any role.",
+          title: "Kuasi Produktivitas Office",
+          description: "Excel, Google Workspace, dan tools presentasi—skill penting buat hampir semua pekerjaan.",
         },
         {
-          title: "Learn Communication Tools",
-          description: "Slack, Teams, email etiquette - collaborate effectively with remote teams.",
+          title: "Pelajari Tools Komunikasi",
+          description: "Slack, Teams, etika email—biar makin efektif kerja sama tim, terutama remote.",
         },
         {
-          title: "Understand Cloud Basics",
-          description: "Google Drive, OneDrive, cloud storage security and collaboration.",
+          title: "Pahami Dasar Cloud",
+          description: "Google Drive, OneDrive, sharing, dan keamanan penyimpanan berbasis cloud.",
         },
         {
-          title: "Cybersecurity Awareness",
-          description: "Password management, phishing detection, data protection basics.",
+          title: "Basic Cybersecurity",
+          description: "Cara kelola password, deteksi phishing, dan jaga keamanan data.",
         },
       ],
     },
     {
-      title: "Soft Skills for Gen Z",
+      title: "Soft Skills untuk Gen Z",
       steps: [
         {
           title: "Emotional Intelligence",
-          description: "Self-awareness, empathy, and managing emotions in workplace.",
+          description: "Belajar memahami diri, empati, dan ngatur emosi saat kerja.",
         },
         {
-          title: "Communication & Presentation",
-          description: "Write clearly, speak confidently, and present your ideas effectively.",
+          title: "Komunikasi & Presentasi",
+          description: "Nulis dengan jelas, ngomong percaya diri, dan nyampein ide secara efektif.",
         },
         {
-          title: "Collaboration & Teamwork",
-          description: "Work across functions, resolve conflicts, and build strong relationships.",
+          title: "Kolaborasi & Teamwork",
+          description: "Kerja lintas divisi, nyelesain konflik, dan bangun hubungan kerja yang solid.",
         },
         {
-          title: "Adaptability & Growth Mindset",
-          description: "Embrace change, learn continuously, and bounce back from setbacks.",
+          title: "Adaptasi & Growth Mindset",
+          description: "Siap berubah, terus belajar, dan cepat bangkit dari kegagalan.",
         },
       ],
     },
     {
-      title: "Career Path: Tech to PM",
+      title: "Jalur Karir: Tech ke Product Manager",
       steps: [
         {
-          title: "Year 1: Engineering Foundation",
-          description: "Start as junior engineer, learn codebase, understand product from technical perspective.",
+          title: "Tahun 1: Fondasi Engineering",
+          description: "Mulai sebagai junior engineer, pelajari codebase, dan pahami produk dari sisi teknis.",
         },
         {
-          title: "Year 2-3: Ownership & Impact",
-          description: "Take on larger projects, influence product decisions, mentor junior team members.",
+          title: "Tahun 2-3: Pengaruh & Dampak",
+          description: "Atur proyek yang lebih besar, berkontribusi ke keputusan produk, dan mulai mentoring.",
         },
         {
-          title: "Year 3-4: Transition to PM",
-          description: "Move into Associate PM role, lead cross-functional initiatives, build strategy skills.",
+          title: "Tahun 3-4: Transisi ke PM",
+          description:
+            "Masuk ke role Associate PM, pimpin inisiatif lintas tim, dan bangun kemampuan strategi produk.",
         },
         {
-          title: "Year 5+: Senior PM",
-          description: "Own major product lines, define strategy, drive company goals and vision.",
+          title: "Tahun 5+: Senior PM",
+          description:
+            "Pegang lini produk besar, tentuin arah produk, dan drive keputusan bisnis level tinggi.",
         },
       ],
     },
-  ]
+  ];
 
   return (
     <section className="w-full py-14 md:py-20 bg-gradient-to-br from-blue-50/40 via-white to-blue-50/40">

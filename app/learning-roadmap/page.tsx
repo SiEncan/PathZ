@@ -38,9 +38,9 @@ export default function LearningRoadmap() {
         <section className="w-full py-12 md:py-16">
           <div className="max-w-7xl mx-auto px-8">
             <div className="text-center space-y-4">
-              <h1 className="text-4xl md:text-5xl font-bold text-balance">Your Learning Roadmap</h1>
+              <h1 className="text-4xl md:text-5xl font-bold text-balance">Rencana Belajar Kamu</h1>
               <p className="text-base md:text-lg text-muted-foreground text-balance max-w-2xl mx-auto">
-                Follow structured learning paths to build essential skills and achieve your career goals.
+                Ikuti langkah belajar yang terstruktur untuk membangun skill penting dan mencapai tujuan kariermu.
               </p>
             </div>
           </div>

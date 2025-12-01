@@ -7,25 +7,25 @@ export default function CareerExplorer() {
     {
       id: "uiux",
       title: "UX/UI Designer",
-      description: "Design beautiful and intuitive digital experiences for users.",
+      description: "Mendesain pengalaman digital yang cantik, intuitif, dan mudah digunakan.",
       icon: "🎨",
     },
     {
       id: "data",
       title: "Data Analyst",
-      description: "Turn data into actionable insights that drive business decisions.",
+      description: "Mengubah data menjadi insight yang bisa membantu pengambilan keputusan bisnis.",
       icon: "📊",
     },
     {
       id: "frontend",
       title: "Frontend Developer",
-      description: "Build responsive and interactive web applications.",
+      description: "Membangun aplikasi web yang responsif, cepat, dan interaktif.",
       icon: "💻",
     },
     {
       id: "cybersecurity",
       title: "Cybersecurity Specialist",
-      description: "Protect digital systems and networks from cyber threats.",
+      description: "Melindungi sistem dan jaringan digital dari ancaman siber.",
       icon: "🔒",
     },
   ]
@@ -34,28 +34,29 @@ export default function CareerExplorer() {
     {
       id: "pm",
       title: "Product Manager",
-      description: "Lead product strategy and bring ideas to market.",
+      description: "Memimpin strategi produk dan membawa ide menjadi kenyataan.",
       icon: "🚀",
     },
     {
       id: "creator",
       title: "Content Creator",
-      description: "Build audience and influence through creative storytelling.",
+      description: "Membangun audiens dan pengaruh lewat konten kreatif.",
       icon: "🎬",
     },
     {
       id: "entrepreneur",
       title: "Entrepreneur",
-      description: "Start your own business and build something from scratch.",
+      description: "Membangun bisnis dari awal dan menciptakan sesuatu yang bermakna.",
       icon: "🌟",
     },
     {
       id: "consultant",
       title: "Business Consultant",
-      description: "Help organizations solve complex problems and grow.",
+      description: "Membantu perusahaan memecahkan masalah dan berkembang lebih cepat.",
       icon: "💼",
     },
   ]
+
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -92,10 +93,11 @@ export default function CareerExplorer() {
         <section className="w-full py-12 md:py-16 bg-gradient-to-b from-primary/5 to-transparent">
           <div className="max-w-7xl mx-auto px-8 lg:px-8">
             <div className="text-center space-y-4">
-              <h1 className="text-4xl md:text-5xl font-bold text-balance">Explore Careers That Fit You</h1>
+              <h1 className="text-4xl md:text-5xl font-bold text-balance">
+                Jelajahi Karier yang Cocok Untukmu
+              </h1>
               <p className="text-lg text-muted-foreground text-balance max-w-2xl mx-auto">
-                Discover career paths aligned with your skills and passions. Learn what it takes to succeed in each
-                role.
+                Temukan pilihan karier yang selaras dengan skill dan passion-mu. Pelajari apa saja yang dibutuhkan untuk sukses di setiap peran.
               </p>
             </div>
           </div>
@@ -105,8 +107,10 @@ export default function CareerExplorer() {
         <section className="w-full py-12 md:py-16">
           <div className="max-w-7xl mx-auto px-8 space-y-8">
             <div>
-              <h2 className="text-2xl md:text-3xl font-bold mb-2">Skill-Based Careers</h2>
-              <p className="text-sm md:text-base text-muted-foreground">Careers built on technical expertise and specialized skills.</p>
+              <h2 className="text-2xl md:text-3xl font-bold mb-2">Karier Berbasis Skill</h2>
+              <p className="text-sm md:text-base text-muted-foreground">
+                Pilihan karier yang dibangun dari keahlian teknis dan skill khusus.
+              </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {skillBasedCareers.map((career) => (
@@ -120,8 +124,10 @@ export default function CareerExplorer() {
         <section className="w-full py-12 md:py-16 bg-muted/30">
           <div className="max-w-7xl mx-auto px-8 space-y-8">
             <div>
-              <h2 className="text-2xl md:text-3xl font-bold mb-2">Passion-Based Careers</h2>
-              <p className="text-sm md:text-base text-muted-foreground">Careers driven by passion, creativity, and personal purpose.</p>
+              <h2 className="text-2xl md:text-3xl font-bold mb-2">Karier Berbasis Passion</h2>
+              <p className="text-sm md:text-base text-muted-foreground">
+                Karier yang digerakkan oleh passion, kreativitas, dan tujuan pribadi.
+              </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {passionBasedCareers.map((career) => (

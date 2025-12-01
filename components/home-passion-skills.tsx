@@ -1,7 +1,7 @@
 export function HomePassionSkills() {
   return (
-    <section className="py-20 md:py-28 bg-white">
-      <div className="max-w-6xl mx-auto px-8">
+    <section className="py-20 md:py-28 bg-white ">
+      <div className="max-w-6xl mx-auto px-8 md:px-4">
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-3xl md:text-5xl font-bold text-foreground">
             Passion vs Skill: Temukan Keseimbanganmu!

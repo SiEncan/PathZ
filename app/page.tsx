@@ -15,19 +15,17 @@ export default function Home() {
       <Navbar />
       <main className="flex-1">
         <div className="fixed inset-0 overflow-hidden pointer-events-none">
-          {/* Blob kanan atas */}
           <div
             className="
               absolute top-20 right-20 
-              w-96 h-96                       /* mobile */
-              md:w-[500px] md:h-[500px]       /* tablet */
-              lg:w-[750px] lg:h-[750px]       /* desktop */
-              xl:w-[850px] xl:h-[850px]       /* large desktop */
+              w-96 h-96 
+              md:w-[500px] md:h-[500px]
+              lg:w-[750px] lg:h-[750px]
+              xl:w-[850px] xl:h-[850px]
               bg-blue-300/30 rounded-full blur-3xl
             "
           ></div>
 
-          {/* Blob kiri bawah */}
           <div
             className="
               absolute bottom-20 left-20 
